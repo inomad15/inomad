@@ -8,7 +8,7 @@
 5. git init            // 깃 명령어를 사용할 수 있는 디렉토리로 만든다.
 6. git status          // 현재 상태를 훑어보고
 7. git add 화일명.확장자  // 깃 주목 리스트에 화일을 추가하고 or
-8. git add .           // 이 명령은 현재 디렉토리의 모든 화일을 추가할 수 있다.
+8. git add 이 명령은 현재 디렉토리의 모든 화일을 추가할 수 있다.
 9. git commit -m “현재형으로 설명” // 커밋해서 스냅샷을 찍는다.
 
 10. git remote add origin https://github.com/username/myproject.git // 로컬과 원격 저장소를 연결한다.
@@ -19,21 +19,21 @@
 
 원격 저장소에서 로컬 컴퓨터로 코드를 다운로드하기 위해서 `clone`과 `fetch`를 쓸 수 있다. `merge`는 다른 사람의 작업내용을 나의 작업과 합칠 때 사용한다. `pull`은 `fetch`와 `merge`를 합친 기능이다.
 
-1. 다른 사람의 저장소를 모두 카피하고 싶을 때는 `clone`을 쓴다.
+- 다른 사람의 저장소를 모두 카피하고 싶을 때는 `clone`을 쓴다.
  
-`git clone https://github.com/USERNAME/REPOSITORY.git`
+ `git clone https://github.com/USERNAME/REPOSITORY.git`
 
-2. 다른 사람의 새로운 작업을 가져오고 싶을 때는 `fetch`를 쓴다.
+- 다른 사람의 새로운 작업을 가져오고 싶을 때는 `fetch`를 쓴다.
 
-`git fetch remotename`
+ `git fetch remotename`
 
-3. 다른 사람의 변화된 작업 내용과 당신의 새로운 작업내용을 합칠 때는 `merge`를 쓴다.
+- 다른 사람의 변화된 작업 내용과 당신의 새로운 작업내용을 합칠 때는  `merge`를 쓴다.
 
-`git merge remotename/branchname`
+ `git merge remotename/branchname`
 
-4. `fetch`와 `merge`를 함께 실행하고 싶을 때는 `pull`을 쓴다.
+- `fetch`와 `merge`를 함께 실행하고 싶을 때는 `pull`을 쓴다.
 
-`git pull remotename branchname`
+ `git pull remotename branchname`
 
 
 
