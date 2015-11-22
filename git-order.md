@@ -20,7 +20,7 @@
 원격 저장소에서 로컬 컴퓨터로 코드를 다운로드하기 위해서 `clone`과 `fetch`를 쓸 수 있다. `merge`는 다른 사람의 작업내용을 나의 작업과 합칠 때 사용한다. `pull`은 `fetch`와 `merge`를 합친 기능이다.
 
 - 다른 사람의 저장소를 모두 카피하고 싶을 때는 `clone`을 쓴다.
- 
+
  `git clone https://github.com/USERNAME/REPOSITORY.git`
 
 - 다른 사람의 새로운 작업을 가져오고 싶을 때는 `fetch`를 쓴다.
@@ -35,21 +35,19 @@
 
  `git pull remotename branchname`
 
+## [원격 서버와 함께 작업하기](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
+깃 프로젝트를 다른 사람들과 공동으로 작업하기 위해서는 원격 저장소를 다루는 법에 익숙해져야 한다. 원격 저장소에 데이터를 자유롭게 넣고 빼는 방법을 알아야 한다.
 
+- 깃의 원격 저장소를 복제한다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`$ git clone https://github.com/schacon/ticgit
+Cloning into 'ticgit'...
+remote: Reusing existing pack: 1857, done.
+remote: Total 1857 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (1857/1857), 374.35 KiB | 268.00 KiB/s, done.
+Resolving deltas: 100% (772/772), done.
+Checking connectivity... done.
+$ cd ticgit
+$ git remote
+origin`
